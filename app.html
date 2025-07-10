@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App Psicología</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h2>✨ Bienvenido a tu espacio de bienestar</h2>
+    <p>Elige una opción:</p>
+    <button onclick="showChat()">ChatBot de apoyo</button>
+    <div id="chatSection" style="display:none;">
+      <div class="chatbox" id="chatbox"></div>
+      <input type="text" id="userInput" placeholder="Escribe algo...">
+      <button id="sendBtn" onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="chatbot.js"></script>
+  <script>
+    function showChat(){
+      document.getElementById('chatSection').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
